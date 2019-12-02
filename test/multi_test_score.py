@@ -82,7 +82,7 @@ use_gpu = torch.cuda.is_available()
 # ---------------------------
 def load_network1(network):
     # save_path = os.path.join('./model_gray2',name,'net_%s.pth'%opt.which_epoch)
-    save_path = os.path.join('./ibn81.98.pth')
+    save_path = os.path.join('./IBNResnet50_81.998.pth')
     network.load_state_dict(torch.load(save_path))
     return network
 def load_network2(network):
